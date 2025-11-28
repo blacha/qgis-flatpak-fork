@@ -31,5 +31,5 @@ jobs:
     - name: Upload Bundle Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: app-bundle
+        name: linz-qgis
         path: linz-qgis.flatpak
