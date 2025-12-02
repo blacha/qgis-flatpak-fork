@@ -27,7 +27,6 @@ jobs:
 
       - name: Build Flatpak
         run: |
-          echo "Hello World!"
           flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
 
           dbus-run-session flatpak-builder --disable-rofiles-fuse --user --install-deps-from=flathub --repo=repo --force-clean build-dir nz.govt.linz.qgis.json
