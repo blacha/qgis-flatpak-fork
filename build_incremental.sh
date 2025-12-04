@@ -42,6 +42,8 @@ build_module() {
 
     flatpak-builder \
         --force-clean \
+        --install-deps-from=flathub \
+        --user \
         --stop-at="$module" \
         --state-dir="$STATE_DIR" \
         --disable-rofiles-fuse \
